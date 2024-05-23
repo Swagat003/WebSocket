@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Screen Share</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        <h1>Screen Casting</h1>
+        <div id="controls">
+            <label for="room">Room:</label>
+            <input type="text" id="room" placeholder="Enter room name">
+            <button id="join">Join Room</button>
+            <button id="start">Start Capture</button>
+            <button id="stop">Stop Capture</button>
+        </div>
+        <div id="room-name"></div>
+    </div>
+    <div id="main">
+        <img id="screen" alt="Screen Capture">
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
